@@ -7,6 +7,9 @@ public class Prime_06{
     //System.out.println(Math.round(Math.sqrt(num)));
     //System.out.println(Math.round(Math.pow(num,0.5)));
     double val = Math.round(Math.sqrt(num));
+    if(num<=1){
+      System.out.println("Neither prime nor composite");
+    }
     while(c <= val){
 
       if(num%c == 0){
