@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Merge_Sorted_Array {
 
     public static void main(String[] args) {
-        // Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         // System.out.println("Enter");
         // int m = sc.nextInt();
         // sc.next();
@@ -29,6 +29,8 @@ public class Merge_Sorted_Array {
         int[] arr2={2,5,6};
 
         merge(arr1,m,arr2,n);
+
+        sc.close();
     }
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
