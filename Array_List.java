@@ -31,6 +31,7 @@ public class Array_List {
       System.out.println(list1.get(i));
     }
 
+    sc.close();
   }
   
 }

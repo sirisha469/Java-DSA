@@ -20,5 +20,7 @@ public class Multi_Array_List {
 
     System.out.println(list);
     System.out.println(list.get(0).get(1));
+
+    sc.close();
   }
 }
