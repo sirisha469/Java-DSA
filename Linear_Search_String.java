@@ -1,8 +1,11 @@
+import java.util.Arrays;
+
 public class Linear_Search_String {
   public static void main(String[] args) {
     String str="Dhaanvi";
     char target='a';
 
+    System.out.println(Arrays.toString(str.toCharArray()));
     System.out.println(searchInString(str,target));
     System.out.println(searchInString1(str,target));
   }
@@ -20,6 +23,7 @@ public class Linear_Search_String {
     return false;
   }
 
+  //convert string to toCharArray()
   static boolean searchInString1(String str, char target) {
     if(str.length() ==0){
       return false;
