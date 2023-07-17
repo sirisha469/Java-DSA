@@ -21,15 +21,16 @@ public class EvenDigitsLeet {
 
   static boolean digits(int num) {
     int digits=countDigits3(num);
-    if(digits %2 == 0){
-      return true;
-    }
-    return false;
+    
+    return digits%2 ==0;
   }
 
 
   static int countDigits(int num) {
     int count=0;
+    if(num < 0){
+      num=num*-1;
+    }
     while(num > 0){
       count++;
       num/=10;
@@ -44,6 +45,9 @@ public class EvenDigitsLeet {
   }
 
   static int countDigits3(int num) {
+    if(num < 0){
+      num=num*-1;
+    }
     return (int)(Math.log10(num)+1);
   }
 
