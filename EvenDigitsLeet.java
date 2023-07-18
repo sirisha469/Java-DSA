@@ -22,6 +22,11 @@ public class EvenDigitsLeet {
   static boolean digits(int num) {
     int digits=countDigits3(num);
     
+    // if(digits%2 == 0){
+    //   return true;
+    // }
+    // return false;
+
     return digits%2 ==0;
   }
 
@@ -39,6 +44,9 @@ public class EvenDigitsLeet {
   }
 
   static int countDigits2(int num) {
+     if(num < 0){
+      num=num*-1;
+    }
     String str=Integer.toString(num);
     int count=str.length();
     return count;
