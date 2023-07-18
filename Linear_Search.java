@@ -1,3 +1,4 @@
+//Linear search: O(N)
 public class Linear_Search {
   public static void main(String[] args) {
     int[] arr={12,3,45,23,6,18};
