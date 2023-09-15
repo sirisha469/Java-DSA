@@ -1,15 +1,15 @@
-//https://leetcode.com/problems/set-mismatch/
+package Cyclic_Sort;
+import java.util.ArrayList;
+import java.util.List;
 
-import java.util.Arrays;
-
-public class SetMismatchCyclic {
+public class FindAllDuplicatesCyclic {
   public static void main(String[] args) {
-    int[] arr = {1,2,2,4};
-    int[] a=findError(arr);
-    System.out.println(Arrays.toString(a));
+    int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
+    List<Integer> list=allDuplicateElement(arr);
+    System.out.println(list);
   }
 
-   public static int[] findError(int[] nums){
+  public static List<Integer> allDuplicateElement(int[] nums){
     int i=0, len=nums.length;
     while(i < len){
       int correctIndex = nums[i] - 1;
@@ -21,12 +21,15 @@ public class SetMismatchCyclic {
       }
     }
 
+    List<Integer> ans = new ArrayList<>();
     for(int j=0;j<len;j++){
       if(nums[j]!=j+1){
-        return new int[] {nums[j], j+1};
+        ans.add(nums[j]);
       }
     }
-    return new int[] {-1,-1};
+    return ans;
+
+    
   }
 
   public static void swap(int[] nums, int i, int correctIndex) {

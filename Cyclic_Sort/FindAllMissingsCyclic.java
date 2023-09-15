@@ -1,14 +1,18 @@
+package Cyclic_Sort;
+//https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class FindAllDuplicatesCyclic {
+public class FindAllMissingsCyclic {
   public static void main(String[] args) {
     int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
-    List<Integer> list=allDuplicateElement(arr);
+    List<Integer> list=allMissingNumbers(arr);
     System.out.println(list);
   }
 
-  public static List<Integer> allDuplicateElement(int[] nums){
+  //numbers 1 to N
+  public static List<Integer> allMissingNumbers(int[] nums){
     int i=0, len=nums.length;
     while(i < len){
       int correctIndex = nums[i] - 1;
@@ -23,12 +27,10 @@ public class FindAllDuplicatesCyclic {
     List<Integer> ans = new ArrayList<>();
     for(int j=0;j<len;j++){
       if(nums[j]!=j+1){
-        ans.add(nums[j]);
+        ans.add(j+1);
       }
     }
     return ans;
-
-    
   }
 
   public static void swap(int[] nums, int i, int correctIndex) {

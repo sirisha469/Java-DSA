@@ -1,17 +1,16 @@
-//https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+package Cyclic_Sort;
+//https://leetcode.com/problems/set-mismatch/
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
-public class FindAllMissingsCyclic {
+public class SetMismatchCyclic {
   public static void main(String[] args) {
-    int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
-    List<Integer> list=allMissingNumbers(arr);
-    System.out.println(list);
+    int[] arr = {1,2,2,4};
+    int[] a=findError(arr);
+    System.out.println(Arrays.toString(a));
   }
 
-  //numbers 1 to N
-  public static List<Integer> allMissingNumbers(int[] nums){
+   public static int[] findError(int[] nums){
     int i=0, len=nums.length;
     while(i < len){
       int correctIndex = nums[i] - 1;
@@ -23,13 +22,12 @@ public class FindAllMissingsCyclic {
       }
     }
 
-    List<Integer> ans = new ArrayList<>();
     for(int j=0;j<len;j++){
       if(nums[j]!=j+1){
-        ans.add(j+1);
+        return new int[] {nums[j], j+1};
       }
     }
-    return ans;
+    return new int[] {-1,-1};
   }
 
   public static void swap(int[] nums, int i, int correctIndex) {
