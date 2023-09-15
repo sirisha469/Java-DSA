@@ -6,7 +6,7 @@
 
 
 package patterns;
-public class patterns5 {
+public class pattern5 {
   public static void main(String[] args) {
     pattern(5);
   }
