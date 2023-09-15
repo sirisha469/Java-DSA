@@ -1,3 +1,13 @@
+// *
+// **
+// ***
+// ****
+// *****
+// ****
+// ***
+// **
+// *
+
 package patterns;
 
 public class pattern3 {
