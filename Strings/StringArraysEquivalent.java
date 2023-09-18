@@ -17,6 +17,7 @@ class StringArraysEquivalent{
     return String.join("",word1).equals(String.join("",word2));
   }
 
+
   public static boolean arrayStringsAreEqual2(String[] word1, String[] word2) {
           
     StringBuilder sb1 = new StringBuilder();
