@@ -1,3 +1,4 @@
+package BinarySearch;
 public class BSInfiniteArray {
   public static void main(String[] args) {
     int[] arr = {2, 3, 5, 7, 9, 11, 15, 20, 23, 30, 33};

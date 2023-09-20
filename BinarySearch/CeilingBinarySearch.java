@@ -1,3 +1,4 @@
+package BinarySearch;
 public class CeilingBinarySearch {
   public static void main(String[] args) {
     int[] arr = {2,3,8,14,16,19,20};

@@ -1,3 +1,4 @@
+package BinarySearch;
 //Binary search - O(lon N) 
 //Liner search - O(N)
 public class BinarySearch { 

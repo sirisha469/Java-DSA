@@ -1,3 +1,4 @@
+package BinarySearch;
 //https://leetcode.com/problems/peak-index-in-a-mountain-array/
 public class PeakElementMountain {
   public static void main(String[] args) {

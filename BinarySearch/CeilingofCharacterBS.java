@@ -1,3 +1,4 @@
+package BinarySearch;
 //https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/
 public class CeilingofCharacterBS {
   public static void main(String[] args) {

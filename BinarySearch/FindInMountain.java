@@ -1,3 +1,4 @@
+package BinarySearch;
 //https://leetcode.com/problems/find-in-mountain-array/
 public class FindInMountain {
   public static void main(String[] args) {
