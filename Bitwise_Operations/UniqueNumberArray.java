@@ -6,7 +6,6 @@ public class UniqueNumberArray {
     //output unique = 6
 
     System.out.println(uniqueNumber(arr));
-
   }
 
   public static int uniqueNumber(int[] arr){
