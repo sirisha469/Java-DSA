@@ -10,12 +10,9 @@ public class UniqueNumberArray {
 
   public static int uniqueNumber(int[] arr){
     int unique = 0;
-
     for(int n:arr){
       unique = unique ^ n;
     }
-
     return unique;
-
   }
 }
