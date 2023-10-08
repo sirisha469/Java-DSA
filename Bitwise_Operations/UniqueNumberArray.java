@@ -7,7 +7,6 @@ public class UniqueNumberArray {
 
     System.out.println(uniqueNumber(arr));
   }
-
   public static int uniqueNumber(int[] arr){
     int unique = 0;
     for(int n:arr){
