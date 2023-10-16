@@ -1,5 +1,5 @@
 package BinarySearch;
-
+//https://leetcode.com/problems/number-of-flowers-in-full-bloom/description/?envType=daily-question&envId=2023-10-11
 import java.util.Arrays;
 
 public class NumberOfFlowers {
