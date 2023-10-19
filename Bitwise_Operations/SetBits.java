@@ -27,7 +27,7 @@ public class SetBits {
     int count = 0;
 
     while(n>0){
-      if((n&1) == 1){
+      if((n & 1) == 1){
         count++;
       }
 
