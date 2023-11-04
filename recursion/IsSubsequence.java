@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/is-subsequence/description/
 
-package recursion;
+package Recursion;
 
 public class IsSubsequence {
   public static void main(String[] args) {
