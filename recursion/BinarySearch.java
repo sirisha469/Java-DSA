@@ -3,7 +3,7 @@ package Recursion;
 public class BinarySearch{
 
   public static void main(String[] args) {
-    int[] arr = {1, 2, 5, 20, 34, 57, 90};
+    int[] arr = {1, 2, 5, 20, 34, 57, 90}; 
     int target = 20;
 
     System.out.println("Index of target: "+search(arr, target, 0, arr.length-1));

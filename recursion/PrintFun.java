@@ -30,7 +30,7 @@ public class PrintFun {
       return;
     
     System.out.print(n+" ");
-    funBoth(n-1);
+    funBoth(n-1); 
     //after all the successful function call it starts printing
     System.out.print(n+" ");
   }
