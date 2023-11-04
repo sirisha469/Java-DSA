@@ -4,7 +4,18 @@ public class PrintFun {
   public static void main(String[] args) {
     // fun1(5);
     // fun2(5);
-    funBoth(5);
+    // funBoth(5);
+    concept(5);
+  }
+
+  public static void concept(int n){
+    if(n==0)
+      return;
+    
+    System.out.print(n+" ");
+    // concept(n--); it run infinite times
+
+    concept(--n);
   }
 
   public static void fun1(int n){
