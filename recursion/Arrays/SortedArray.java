@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Arrays;
 
 public class SortedArray {
   public static void main(String[] args) {
