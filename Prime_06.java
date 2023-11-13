@@ -1,6 +1,6 @@
 public class Prime_06{
   public static void main(String[] args) {
-    System.out.println("Hello"); 
+    //System.out.println("Hello"); 
     int num = 29;
     int c = 2;
 
