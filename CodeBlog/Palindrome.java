@@ -2,24 +2,24 @@ package CodeBlog;
 
 public class Palindrome {
   public static void main(String[] args) {
-    // String str = "madam";
-    // // int number = 121;
-    // //String str = String.valueOf(number);
-    // String reverseStr="";
-    // String s = str.toLowerCase();
-    // System.out.println("Original:"+s);
-    // for(int i=s.length()-1;i>=0;i--){
-    //   reverseStr += s.charAt(i);
-    // }
-    // System.out.println("Reversed:"+str);
-    // if(s. equals(reverseStr)){
-    //     System.out.println("String is palindrome");
-    // }
-    // else{
-    //     System.out.println("String is not a palindrome");
-    // }
+    String str = "madam";
+    // int number = 121;
+    //String str = String.valueOf(number);
+    String reverseStr="";
+    String s = str.toLowerCase();
+    System.out.println("Original:"+s);
+    for(int i=s.length()-1;i>=0;i--){
+      reverseStr += s.charAt(i);
+    }
+    System.out.println("Reversed:"+str);
+    if(s. equals(reverseStr)){
+        System.out.println("String is palindrome");
+    }
+    else{
+        System.out.println("String is not a palindrome");
+    }
 
-    // palindrome(str);
+    palindrome(str);
 
 
 
