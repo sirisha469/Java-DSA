@@ -19,9 +19,9 @@ public class Factorial {
     System.out.println(n+" Factorial is "+fact);
     //In every iteration n value decreases
     //System.out.println(n+" Factorial is "+fact);
-    //int num = 4;
+    int num = 4;
     
-    //System.out.println(num+" Factorial is "+Main(num));
+    System.out.println(num+" Factorial is "+Main(num));
 
 
   }
