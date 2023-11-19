@@ -33,11 +33,11 @@ public class Fibonacci {
     // }
 
     //int ans = fibonacci(5);
+    //System.out.println(ans);
     System.out.print("Fibonacci sequence: ");
     for(int i=0;i<num;i++){
       System.out.print(fibonacci(i)+" ");
     }
-    //System.out.println(ans);
   }
 
   static int fibonacci(int n){
