@@ -3,7 +3,6 @@ package CodeBlog;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import HashMap.Map;
 
 public class Panagram {
   public static void main(String[] args) {
@@ -29,7 +28,7 @@ public class Panagram {
     System.out.println("Panagram: "+ans);
 
 
-
+    //method 2
     HashMap<Character,Integer> map=new HashMap<>();
 
     for(int i=0;i<s.length();i++){
@@ -44,6 +43,7 @@ public class Panagram {
     }
 
 
+    //method 3
     HashSet <Character> a=new HashSet<>();            
     if(s.length()>25)
     {
