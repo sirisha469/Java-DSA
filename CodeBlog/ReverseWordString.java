@@ -3,7 +3,9 @@ package CodeBlog;
 public class ReverseWordString {
   public static void main(String[] args) {
     String s = "code with siri";
-    System.out.println("Input: "+s);
+
+    rev(s, s.length()-1);
+    //System.out.println("Input: "+s);
     //converting string to string array
     String[] str = s.split(" ");
     StringBuilder sb = new StringBuilder();
@@ -15,6 +17,8 @@ public class ReverseWordString {
       sb.append(reverse(str[str.length-1]));
     }
     System.out.println("Output: "+sb);
+
+    System.out.println(rever(s, s.length()-1));
   }
 
   public static String reverse(String s){
@@ -23,5 +27,26 @@ public class ReverseWordString {
       reverse+=s.charAt(i);
     }
     return reverse;
+  }
+
+  public static void rev(String s,int len){
+    if(len ==-1){
+      return;
+    }
+    String str = "";
+    str = str + s.charAt(len);
+
+    System.out.print(str);
+    rev(s,len-1);
+  }
+
+  public static String rever(String s,int len){
+    if(len ==-1){
+      return "";
+    }
+    // String str = "";
+    // str = str + s.charAt(len);
+
+    return s.charAt(len) + rever(s,len-1); 
   }
 }
