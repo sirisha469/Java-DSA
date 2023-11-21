@@ -7,12 +7,14 @@ public class StringReverse {
     System.out.println();
     System.out.println(rever(s, s.length()-1));
   }
+  
 
   public static void rev(String s,int len){
     if(len ==-1){
       return;
     }
     String str = "";
+    System.out.println(str);
     str = str + s.charAt(len);
 
     System.out.print(str);

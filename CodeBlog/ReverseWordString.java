@@ -17,7 +17,6 @@ public class ReverseWordString {
       sb.append(reverse(str[str.length-1]));
     }
     System.out.println("Output: "+sb);
-
     System.out.println(rever(s, s.length()-1));
   }
 
@@ -44,8 +43,6 @@ public class ReverseWordString {
     if(len ==-1){
       return "";
     }
-    // String str = "";
-    // str = str + s.charAt(len);
 
     return s.charAt(len) + rever(s,len-1); 
   }
