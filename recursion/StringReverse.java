@@ -14,7 +14,6 @@ public class StringReverse {
       return;
     }
     String str = "";
-    System.out.println(str);
     str = str + s.charAt(len);
 
     System.out.print(str);
