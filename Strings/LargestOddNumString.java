@@ -25,8 +25,10 @@ public class LargestOddNumString {
 
   public static String largestOddNumber1(String num) {
     int len = num.length();
-    
-    if(len>=0 && num.charAt(len-1)%2==1) 
+    if(len==0){
+      return "";
+    }
+    else if(num.charAt(len-1)%2==1) 
       return num.substring(0,len);
     else{
       return largestOddNumber1(num.substring(0, len-1));
