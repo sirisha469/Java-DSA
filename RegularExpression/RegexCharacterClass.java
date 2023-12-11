@@ -6,6 +6,6 @@ public class RegexCharacterClass {
   public static void main(String[] args) {
     System.out.println(Pattern.matches("[abc]", "a"));
     System.out.println(Pattern.matches("[^abc]", "s"));
-    System.out.println(Pattern.matches("[a-zA-Z]", "S"));
+    System.out.println(Pattern.matches("[a-zA-Z]", "M"));
   }
 }
