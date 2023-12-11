@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/problems/smith-number4132/1
+
 public class SmithNumberPrime {
   public static void main(String[] args) {
     int n = 378;
