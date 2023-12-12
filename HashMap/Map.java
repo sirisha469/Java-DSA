@@ -24,3 +24,21 @@ public class Map {
   }
 
 }
+
+
+//Notes
+//checking both maps are equal
+// if(!mapA.entrySet().containsAll(mapB.entrySet())) {
+//   System.out.println("Not Anagrams");
+// } 
+// else {
+//   System.out.println("Anagrams");
+// }
+
+//adding data to the map
+// if(!map.containsKey( lowerCaseStr. charAt(i))) {
+//   map.put(lowerCaseStr.charAt(i),1);
+// } 
+// else {
+//   map.put(lowerCaseStr.charAt(i),map.get(lowerCaseStr.charAt(i)) + 1);
+// }
