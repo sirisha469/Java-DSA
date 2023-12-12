@@ -1,3 +1,4 @@
+package MathDSA;
 public class PowerOfFour {
   public static void main(String[] args) {
     int n1 = 16; // 16 is a power of 4 => 4^4
@@ -11,11 +12,11 @@ public class PowerOfFour {
       int power = (int) Math.pow(4,i);
 
       if(power == n){
-          return true;
+        return true;
       }
 
       if(power > n){
-          return false;
+        return false;
       }
     }
     return false;

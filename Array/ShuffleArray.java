@@ -1,3 +1,4 @@
+package Array;
 import java.util.Arrays;
 
 public class ShuffleArray {
@@ -15,5 +16,5 @@ public class ShuffleArray {
     }
     
     return ans;
-}
+  }
 }

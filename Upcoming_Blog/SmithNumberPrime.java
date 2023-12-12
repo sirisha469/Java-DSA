@@ -1,3 +1,4 @@
+package Upcoming_Blog;
 //https://www.geeksforgeeks.org/problems/smith-number4132/1
 
 public class SmithNumberPrime {
