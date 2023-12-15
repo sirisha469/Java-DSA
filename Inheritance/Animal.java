@@ -1,21 +1,5 @@
 package Inheritance;
-class Bird extends Animal{
-  Bird(){
-    // super(10);
-    System.out.println("Bird class constructor");
-  }
-  // static {
-  //   System.out.println("static Bird");
-  // }
-  // {
-  //   System.out.println("Block Bird");
-  // }
-  void walk(){
-    super.walk();
-    System.out.println("Bird walking");
-  }
- 
-}
+
 class Animal {
   Animal(){
     System.out.println("Animal class constructor");
@@ -33,7 +17,23 @@ class Animal {
   }
 }
 
-
+class Bird extends Animal{
+  Bird(){
+    // super(10);
+    System.out.println("Bird class constructor");
+  }
+  // static {
+  //   System.out.println("static Bird");
+  // }
+  // {
+  //   System.out.println("Block Bird");
+  // }
+  void walk(){
+    super.walk();
+    System.out.println("Bird walking");
+  }
+ 
+}
 
 class Main{
   public static void main(String[] args){
