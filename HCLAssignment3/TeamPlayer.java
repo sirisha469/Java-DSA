@@ -1,141 +1,89 @@
 package HCLAssignment3;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
-class Team{
-  private int teamId;
-  private String teamName;
-  private List<Player> players;
-
-  public Team(int teamId,String teamName){
-    this.teamId = teamId;
-    this.teamName = teamName;
-    this.players = new ArrayList<>();
-  }
-
-  public void setTeamId(int teamId){
-    this.teamId = teamId;
-  }
-
-  public int getTeamId(){
-    return teamId;
-  }
-
-  public void setTeamName(String teamName){
-    this.teamName = teamName;
-  }
-
-  public String getTeamName(){
-    return teamName;
-  }
-
-  public void setPlayers(List<Player> players){
-    this.players = players;
-  }
-
-  public List<Player> getPlayers(){
-    return players;
-  }
-
-  public void addPlayer(Player player){
-    players.add(player);
-  }
-
-  public String toString(){
-    return teamId+" "+teamName;
-  }
-
-}
 
 class Player{
   private int playerId;
   private String playerName;
-  private Team team;
+  private int teamId;
+  private String teamName;
 
-  public Player(int playerId,String playerName,Team team){
+  public Player(int playerId,String playerName,int teamId,String teamName){
     this.playerId = playerId;
     this.playerName = playerName;
-    this.team = team;
-  }
-
-  public void setPlayerId(int playerId){
-    this.playerId = playerId;
+    this.teamId = teamId; 
+    this.teamName = teamName;
   }
 
   public int getPlayerId(){
     return playerId;
   }
 
-  public void setPlayerName(String playerName){
-    this.playerName = playerName;
-  }
-
   public String getPlayerName(){
     return playerName;
   }
 
-  public void setTeam(Team team){
-    this.team = team;
+  public int getTeamId(){
+    return teamId;
   }
 
-  public Team getTeam(){
-    return team;
+  public String getTeamName(){
+    return teamName;
   }
 
   public String toString(){
-    return playerId+" "+playerName+" "+team.getTeamName();
+    return "["+playerId+", "+playerName+", "+teamId+", "+teamName+"]";
   }
 }
-
-public class TeamPlayer {
+public class TeamPlayer{
   public static void main(String[] args) {
-    Team t1 = new Team(1,"Team A");
-    Team t2 = new Team(2,"Team B");
+    List<Player> list = new ArrayList<>();
 
-    Player p1 = new Player(1, "player1", t1);
-    Player p2 = new Player(2, "player2", t1);
-    Player p3 = new Player(3, "player3", t2);
+    list.add(new Player(1,"player 1",10,"Team A"));
+    list.add(new Player(2,"player 2",20,"Team B"));
+    list.add(new Player(3,"player 3",20,"Team B"));
 
-    t1.addPlayer(p1);
-    t1.addPlayer(p2);
-    t2.addPlayer(p3);
-
-    System.out.println(t1.getPlayers());
-
+    // System.out.println(list);
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter team ID: ");
+    System.out.println("Enter the team Id: ");
     int teamId = sc.nextInt();
 
-    displayPlayersOfTeam(teamId);
+    findingPlayersBasedOnTeamId(list,teamId);
 
-  }
-
-  public static void displayPlayersOfTeam(int teamId){
-    Team team = findTeamById(teamId);
-    System.out.println(team);
-    System.out.println(team.getPlayers());
-    if(team!=null){
-      for(Player p:team.getPlayers()){
-        System.out.println(p.getPlayerId());
-      }
-    }
-    // else{
-    //   System.out.println("Team not found");
-    // }
+    System.out.println("Enter the Player Id: ");
+    int playerId = sc.nextInt();
     
+    findPlayerDetailsById(list,playerId);
+
+    sc.close();
   }
 
-  public static Team findTeamById(int teamId){
-    List<Team> teams = Arrays.asList(new Team(1, "Team A"), new Team(2, "Team B"));
-
-    for (Team team : teams) {
-      if (team.getTeamId() == teamId) {
-        return team;
+  private static void findingPlayersBasedOnTeamId(List<Player> list,int teamId) {
+    int count=1;
+    for(Player p:list){
+      if(p.getTeamId()==teamId){
+        System.out.println("-----Player"+count+" Details----");
+        System.out.println("Player Id: "+p.getPlayerId());
+        System.out.println("Player Name: "+p.getPlayerName());
+        System.out.println("Team Id: "+p.getTeamId());
+        System.out.println("Team Name: "+p.getTeamName());
+        count++;
       }
     }
-    return null;
+  }
+
+  private static void findPlayerDetailsById(List<Player> list, int playerId) {
+    for(Player p:list){
+      if(p.getPlayerId() == playerId){
+        System.out.println("-----Player Details----");
+        System.out.println("Player Id: "+p.getPlayerId());
+        System.out.println("Player Name: "+p.getPlayerName());
+        System.out.println("Team Id: "+p.getTeamId());
+        System.out.println("Team Name: "+p.getTeamName());
+      }
+    }
   }
 }
+

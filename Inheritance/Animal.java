@@ -5,13 +5,13 @@ class Animal {
     System.out.println("Animal class constructor");
   }
   
-  // static {
-  //   System.out.println("static Animal");
-  // }
+  static {
+    System.out.println("static Animal");
+  }
 
-  // {
-  //   System.out.println("block animal");
-  // }
+  {
+    System.out.println("block animal");
+  }
   void walk(){
     System.out.println("Animal walking");
   }
@@ -29,17 +29,38 @@ class Bird extends Animal{
   //   System.out.println("Block Bird");
   // }
   void walk(){
-    super.walk();
+    // super.walk();
     System.out.println("Bird walking");
+  }
+
+  void downCasting(){
+    System.out.println("Bird down casting");
   }
  
 }
 
 class Main{
   public static void main(String[] args){
-    Bird b = new Bird();
+    {
+      System.out.println("Hi");
+    }
+    // Animal b = new Bird();
     // Animal a = new Animal();
     // a.walk();
-    //b.walk();
+    // b.walk();
+    // Bird b1 = (Bird)b;
+    // b1.downCasting();
+    Main m = new Main();
+    
+  }
+  static{
+    System.out.println("Hello");
+    {
+      System.out.println("siri");
+    }
+  }
+
+  {
+    System.out.println("naga");
   }
 }
