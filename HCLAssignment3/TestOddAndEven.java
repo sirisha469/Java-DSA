@@ -16,7 +16,7 @@ class OddAndEven {
   }
 
   public String toString(){
-    return "Number of Odd: "+countOfOdd+", Number of Even:"+countOfEven;
+    return "Number of Odd: "+countOfOdd+", Number of Even: "+countOfEven;
   }
 }
 
@@ -37,10 +37,11 @@ public class TestOddAndEven{
           obj.addNumber(n);
         }
         catch(NumberFormatException e){
-          System.out.println("Invalidinput. please enter a number or 'Q' or q to exit.");
+          System.out.println("Invalid input. please enter a number or 'Q' or q to exit.");
         }
       }
     }
     System.out.println(obj);
+    sc.close();
   }
 }

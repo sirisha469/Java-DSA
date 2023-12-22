@@ -81,6 +81,8 @@ public class ProductSupplier {
     int supplierId = sc.nextInt();
 
     findProductBasedOnSupplierId(list,supplierId);
+
+    sc.close();
   }
 
   private static void findSuppliersBasedOnProductId(ArrayList<Product> list, int productId) {
