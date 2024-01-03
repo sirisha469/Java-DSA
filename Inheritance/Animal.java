@@ -41,16 +41,17 @@ class Bird extends Animal{
 
 class Main{
   public static void main(String[] args){
-    {
-      System.out.println("Hi");
-    }
+  {
+    System.out.println("Hi");
+  }
     // Animal b = new Bird();
     // Animal a = new Animal();
     // a.walk();
     // b.walk();
     // Bird b1 = (Bird)b;
     // b1.downCasting();
-    Main m = new Main();
+    
+    //Main m = new Main();
     
   }
   static{

@@ -1,10 +1,12 @@
 package Exception;
 
 public class ThrowsException {
-  public static void main(String[] args) throws Exception {
-    int age = 10;
-    if(age<20){
-      throw new Exception();
+  public static void main(String[] args) throws NullPointerException {
+    String str = null;
+    
+    if(str==null){
+      throw new NullPointerException();
     }
+    
   }
 }
