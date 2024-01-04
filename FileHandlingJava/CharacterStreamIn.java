@@ -3,7 +3,7 @@ package FileHandlingJava;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class CharacterStream {
+public class CharacterStreamIn {
   public static void main(String[] args) throws IOException{
     FileReader fileRead = null;
 
