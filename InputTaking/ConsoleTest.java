@@ -1,4 +1,4 @@
-package FileHandlingJava;
+package InputTaking;
 
 import java.io.Console;
 

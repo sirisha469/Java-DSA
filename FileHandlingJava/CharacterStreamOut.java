@@ -28,8 +28,10 @@ public class CharacterStreamOut {
       String more = "\nAlice Bob\n";
       fileWriteOut.write(more,7,4); //from 7th index +4 characetrs are added
 
-      String s = "\n My name is siri\n";
+      String s = "My name is siri\n";
       fileWriteOut.append(s);
+
+      fileWriteOut.append("NagaLakshmi");
     }
     finally{
       fileWriteOut.close();
