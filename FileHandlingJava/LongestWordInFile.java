@@ -21,7 +21,7 @@ public class LongestWordInFile {
           s = str;
         }
       }
-      System.out.println(s);
+      System.out.println("Longest word in file: "+s);
     }
     finally{
       sc.close();

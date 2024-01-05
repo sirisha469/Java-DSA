@@ -6,16 +6,22 @@ import java.io.IOException;
 
 public class AppendTextExistingFile {
   public static void main(String[] args) throws IOException{
-    FileWriter fr = new FileWriter("C:/Users/chsir/Desktop/desktop/Important/exam.txt");
-    String extraData = "\n appending text to the exisiting file\n";
+    // String path = System.getProperty("C:/Users/chsir/Desktop/desktop/Important/exam.txt");
+    // FileWriter fr = new FileWriter();
+    String extraData = "new text to the exisiting file\n";
+    String fileName = "C:/Users/chsir/Desktop/desktop/Important/out_characterstream.txt";
+    BufferedWriter writer = null;
+    FileWriter file = new FileWriter(fileName,true);
     
-    try(BufferedWriter bw = new BufferedWriter(fr)){
-      
-      bw.write(extraData);
+    try{
+      // out = new FileWriter(path,true);
+      writer = new BufferedWriter(file); 
+      writer.write(extraData);
       System.out.println("Successfully append text");
+      writer.close();
     }
     finally{
-      fr.close();
+      writer.close();
     }
   }
 }

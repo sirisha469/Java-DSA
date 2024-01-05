@@ -31,7 +31,7 @@ public class CharacterStreamOut {
       String s = "My name is siri\n";
       fileWriteOut.append(s);
 
-      fileWriteOut.append("NagaLakshmi");
+      fileWriteOut.append("NagaLakshmi\n");
     }
     finally{
       fileWriteOut.close();
