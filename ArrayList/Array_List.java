@@ -25,6 +25,7 @@ public class Array_List {
 
     //remove: remove value at index
     list.remove(1);
+    //remove the value directly
     list.remove(Integer.valueOf(20));
     System.out.println(list);
 
