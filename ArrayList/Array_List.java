@@ -14,12 +14,18 @@ public class Array_List {
     //contains()
     System.out.println(list.contains(20));
 
-    //set()
+    //add at index: it move the value to next index 
+    list.add(0,500);
+    list.add(0,600);
+    System.out.println(list);
+
+    //set(): Here it will replace the value at index 
     list.set(0,100);
+    System.out.println(list);
 
-    //remove
+    //remove: remove value at index
     list.remove(1);
-
+    list.remove(Integer.valueOf(20));
     System.out.println(list);
 
     ArrayList<Integer> list1=new ArrayList<>();
