@@ -1,4 +1,4 @@
-package HCLAssignmentThreads;
+package HCLAssignment6;
 
 class Even implements Runnable{
   @Override

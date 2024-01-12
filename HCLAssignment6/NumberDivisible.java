@@ -1,4 +1,4 @@
-package HCLAssignmentThreads;
+package HCLAssignment6;
 
 public class NumberDivisible implements Runnable{
   @Override
