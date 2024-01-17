@@ -1,24 +1,40 @@
 package Generics;
 
-class Repository<T>{
-  public T value;
+public class MoreGenerics<T,S> {
+  public T value1;
+  public S value2;
 
-  Repository(T value){
-    this.value = value;
+  MoreGenerics(T value1,S value2){
+    this.value1 = value1;
+    this.value2 = value2;
   }
 
-  public void setValue(T value){
-    this.value = value;
+  public void setValue(T value1,S value2){
+    this.value1 = value1;
+    this.value2 = value2;
   }
 
-  public T getValue(){
-    return value;
+  public T getValue1(){
+    return value1;
+  }
+
+  public S getValue2(){
+    return value2;
   }
 
   public String toString(){
-    return "value: "+value+"";
+    return "Value1: "+value1+" Value2: "+value2;
   }
-}
-public class MoreGenerics {
-  
+  public static void main(String[] args) {
+
+    
+    MoreGenerics<String,String> s = new MoreGenerics<>("siri","naga");
+    System.out.println(s);
+
+    MoreGenerics<Integer,Integer> n = new MoreGenerics<>(10,20);
+    System.out.println(n);
+
+    MoreGenerics<Integer,String> both = new MoreGenerics<>(22,"naga");
+    System.out.println(both);
+  }
 }
