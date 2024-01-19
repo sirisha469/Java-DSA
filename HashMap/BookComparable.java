@@ -50,18 +50,17 @@ class Book implements Comparable<Book>{
     return b.getName().compareTo(this.name);
   }
 
-  
 }
 class BookComparable {
   public static void main(String[] args) {
     SortedMap<Book,Double> treeMap = new TreeMap<>();
 
-  treeMap.put(new Book("Catcher in the Ray","J.D.Salinger"),3.3);
-  treeMap.put(new Book("catcher in the Ray","J.D.Salinger"),9.8);
-  treeMap.put(new Book("Ray","Salinger"),3.3);
+    treeMap.put(new Book("Catcher in the Ray","J.D.Salinger"),3.3);
+    treeMap.put(new Book("catcher in the Ray","J.D.Salinger"),9.8);
+    treeMap.put(new Book("Ray","Salinger"),3.3);
 
-  for(Entry<Book,Double> m:treeMap.entrySet()){
-    System.out.println(m.getKey()+" "+m.getValue());
-  }
+    for(Entry<Book,Double> m:treeMap.entrySet()){
+      System.out.println(m.getKey()+" "+m.getValue());
+    }
   }
 }

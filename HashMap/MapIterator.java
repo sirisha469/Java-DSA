@@ -3,8 +3,6 @@ package HashMap;
 import java.util.HashMap;
 import java.util.Set;
 import java.util.Iterator;
-
-
 public class MapIterator {
   public static void main(String[] args) {
     
@@ -23,6 +21,5 @@ public class MapIterator {
       System.out.println(itr.next());
     }
 
-    
   }
 }
