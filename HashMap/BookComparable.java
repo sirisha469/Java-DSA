@@ -49,7 +49,6 @@ class Book implements Comparable<Book>{
   public int compareTo(Book b){
     return b.getName().compareTo(this.name);
   }
-
 }
 class BookComparable {
   public static void main(String[] args) {
