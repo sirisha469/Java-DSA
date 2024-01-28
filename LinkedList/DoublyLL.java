@@ -22,11 +22,20 @@ class DoublyLL {
     Node node = new Node(val);
     Node p = get(index);
 
+    if(p==null){
+      System.out.println("Does not exist!");
+      return;
+    }
+
     node.next = p.next;
     node.prev = p;
     p.next = node;
-    node.next.prev = node;
+
+    if(node.next!=null){
+      node.next.prev = node;
+    }
   }
+
 
   //Insert at last
   public void insertLast(int val){
@@ -41,6 +50,43 @@ class DoublyLL {
     last.next = node;
   }
 
+  //delete first
+  public int deleteFirst(){
+
+    if(head == null){
+      System.out.println("Index not found");
+    }
+    int val = head.val;
+    head = head.next;
+    head.prev = null;
+    return val;
+  }
+
+  //delete at specified index
+  public int delete(int index){
+    Node p = get(index-1);
+    int ans = p.next.val;
+    p.next = p.next.next;
+    p.next.next.prev = p;
+    return ans;
+  }
+
+  //delete Last
+  public int deleteLast(){
+    Node node = lastNode();
+    int ans = node.val;
+    node.prev.next = null;
+    return ans;
+  }
+
+  public Node lastNode(){
+    Node temp = head;
+    while(temp.next!=null){
+      temp = temp.next;
+    }
+    return temp;
+  }
+  
   public Node get(int index){
     Node temp = head;
     for(int i=0;i<index;i++){
@@ -107,12 +153,20 @@ class Main{
     dll.insertFirst(18);
     dll.insertFirst(25);
     dll.insertFirst(8);
+    // dll.insertFirst(50);
+    // dll.insertFirst(48);
 
     dll.insertLast(99);
     dll.display();
 
     dll.insert(200,2);
 
+    System.out.println(dll.deleteFirst());
+    dll.display();
+    System.out.println(dll.deleteLast());
+    dll.display();
+    System.out.println(dll.delete(1));
+    dll.display();
     System.out.println("print reverse order:");
     dll.displayRev();
   }
