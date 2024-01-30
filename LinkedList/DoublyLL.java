@@ -65,7 +65,13 @@ class DoublyLL {
   //delete at specified index
   public int delete(int index){
     Node p = get(index-1);
+    if(p.prev == null){
+      deleteFirst();
+    }
     int ans = p.next.val;
+    if(p.next == null){
+      deleteLast();
+    }
     p.next = p.next.next;
     p.next.next.prev = p;
     return ans;
