@@ -9,7 +9,7 @@ public class HappyNumber {
 
     do{
       slow = findSquare(slow);
-      fast = findSquare(fast);
+      fast = findSquare(findSquare(fast));
     }while(slow!=fast);
 
     if(slow == 1){
