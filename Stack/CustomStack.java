@@ -1,8 +1,8 @@
 package Stack;
 
 public class CustomStack {
-  private int[] data;
-  private static final int DEFAULT_SIZE = 10;
+  public int[] data;
+  public static final int DEFAULT_SIZE = 10;
 
   int ptr = -1;
 
@@ -26,9 +26,9 @@ public class CustomStack {
   }
 
   //remove item : pop method
-  public int pop() throws Exception{
+  public int pop() throws StackException{
     if(isEmpty()){
-      throw new Exception("Stack is empty");
+      throw new StackException("Stack is empty");
     }
 
     int remove = data[ptr];
@@ -38,9 +38,9 @@ public class CustomStack {
     //return data[ptr--];
   }
 
-  public int peek() throws Exception{
+  public int peek() throws StackException{
     if(isEmpty()){
-      throw new Exception("Stack is empty");
+      throw new StackException("Stack is empty");
     }
     return data[ptr];
   }
@@ -56,8 +56,13 @@ public class CustomStack {
   }
 }
 
+class StackException extends Exception{
+  public StackException(String msg){
+    super(msg);
+  }
+}
 class Main{
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws StackException {
     CustomStack c = new CustomStack();
 
     c.push(10);
