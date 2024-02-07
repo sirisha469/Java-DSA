@@ -26,7 +26,7 @@ public class QuickSort {
       while(arr[end]>pivot){
         end--;
       }
-
+      
       if(start<=end){
         int temp=arr[start];
         arr[start] = arr[end];
