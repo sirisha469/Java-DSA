@@ -3,6 +3,8 @@ package Permutation;
 public class PermutationCount {
   public static void main(String[] args) {
     System.out.println(permutationCount("","abc"));
+    //string length factorial - "abc" -> 3! = 6
+    //4! = 24
   }
 
   static int permutationCount(String p, String up){
