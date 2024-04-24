@@ -1,8 +1,10 @@
 package Backtracking;
 
+
 public class MazeProblem{
   public static void main(String[] args) {
     System.out.println("Number of paths: "+maze(4,4));
+
   }
 
   public static int maze(int r,int c){
@@ -15,4 +17,5 @@ public class MazeProblem{
 
     return left+right;
   }
+
 }
